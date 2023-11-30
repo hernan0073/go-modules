@@ -7,11 +7,11 @@ import (
 	"strconv"
 )
 
+var numero int
+
 func ListadeNumeros() {
 
 	scanner := bufio.NewScanner(os.Stdin)
-
-	var numero int
 
 	for {
 		fmt.Println("Ingrese Numero: ")
