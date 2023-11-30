@@ -7,9 +7,8 @@ import (
 	"strconv"
 )
 
-var numero int
-
 func ListadeNumeros() {
+	var numero int
 
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -26,7 +25,6 @@ func ListadeNumeros() {
 	}
 
 	for i := 0; i < 10; i++ {
-		fmt.Println("%d x %d = %d", numero, i, i*numero)
-
+		fmt.Printf("%d x %d = %d\n", numero, i, i*numero)
 	}
 }
