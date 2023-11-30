@@ -12,7 +12,6 @@ func ListadeNumeros() {
 	scanner := bufio.NewScanner(os.Stdin)
 
 	var numero int
-	var err error
 
 	for {
 		fmt.Println("Ingrese Numero: ")
