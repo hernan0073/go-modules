@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func ListadeNumeros() string {
+func ListadeNumeros() {
 
 	scanner := bufio.NewScanner(os.Stdin)
 
