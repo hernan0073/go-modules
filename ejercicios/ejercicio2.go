@@ -7,15 +7,17 @@ import (
 	"strconv"
 )
 
-func ListadeNumeros() {
-	var numero int
+func ListadeNumeros() string {
 
 	scanner := bufio.NewScanner(os.Stdin)
+
+	var numero int
+	var err error
 
 	for {
 		fmt.Println("Ingrese Numero: ")
 		if scanner.Scan() {
-			numero, err := strconv.Atoi(scanner.Text())
+			numero, err = strconv.Atoi(scanner.Text())
 			if err != nil {
 				continue
 			} else {
