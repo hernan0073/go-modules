@@ -1,4 +1,4 @@
-package main
+package files
 
 import (
 	"fmt"
@@ -7,9 +7,11 @@ import (
 	"github.com/hernan0073/go-modules/ejercicios"
 )
 
-func main() {
+var ruta string = "./tabla.txt"
+
+func GrabaTabla() {
 	var text string = ejercicios.ListadeNumeros()
-	archivo, err := os.Create("./tabla.txt")
+	archivo, err := os.Create(ruta)
 	if err != nil {
 		fmt.Println("error al crear el archivo" + err.Error())
 		return
